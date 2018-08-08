@@ -4,4 +4,8 @@ services:
   concierge:
     build:concierge/.
     ports:
-      - "6060;9000"
+      - "6060:9000"
+  a_m_librarian:
+    build:librarian/.
+    ports:
+      -"7070:9000"
